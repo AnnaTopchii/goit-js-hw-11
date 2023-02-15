@@ -10,7 +10,8 @@ export default function renderGallery(array) {
 
         const markup = `
     <div class="photo-card">
-    <img class="photo-card_img" src="${webformatURL}" alt="${tags}" loading = "lazy" />
+    <a class="gallery__item" href="${largeImageURL}">
+    <img class="photo-card_img" src="${webformatURL}" alt="${tags}" loading = "lazy" /></a>
     <div class="info">
         <p class="info-item">
             <b class="info-item_name">Likes</b>
