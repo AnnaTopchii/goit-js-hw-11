@@ -51,7 +51,6 @@ function fetchImages() {
       
     if (apiPixabay.page !== 1) {
       smoothScroll();
-      lightbox.refresh();
     }
 
     if (galleryContainer.children.length === totalHits) {
@@ -60,7 +59,7 @@ function fetchImages() {
     }
    
     apiPixabay.incrementPage();
-
+    lightbox.refresh();
   });
   } 
 
